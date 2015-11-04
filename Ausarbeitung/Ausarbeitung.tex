@@ -25,6 +25,8 @@
 \usepackage[babel]{csquotes}
 \bibliography{literatur}
 
+\usepackage{titling}
+
 \usepackage[all]{xy}
 
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
@@ -162,13 +164,40 @@
 
 \begin{document}
 	\author{Lukas Graf}
-	\title{Online-Optimierung als \ZPNS und Yaos Prinzip}
-	\date{\today}
+	\date{Letzte Aktualisierung: \today}
 	
 	\selectlanguage{ngerman}
 	\thispagestyle{empty}
 	
-	\maketitle
+	
+	\begin{titlepage}\center
+	\textsc{\LARGE Universität Augsburg}\\[1.5cm]
+	
+	\textsc{\Large Institut für Mathematik}\\[2.5cm]
+	
+	% Title
+	{\Large Seminarausarbeitung \\[1cm]}
+	zu einem Vortrag im Seminar Online Optimierung im SS 2015 zum Thema\\[1.5cm]
+	{\huge Online-Optimierung als \ZPNS und Yaos Prinzip}
+		
+	
+	\vfill
+	
+	% Author and supervisor
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+			\emph{Vorgelegt von:}\\
+			Lukas \textsc{Graf}
+		\end{flushleft}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright} \large
+			\emph{Betreut von:} \\
+			M. Sc. Anja \textsc{Huber},\\Prof. Dr. Yann \textsc{Disser}
+		\end{flushright}
+	\end{minipage}
+	
+	\end{titlepage}
 
 	\section*{Einführung}
 	
@@ -567,7 +596,7 @@
 		
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=0.35\linewidth]{../Bilder/Sattelpunkt}
+				\includegraphics[width=0.45\linewidth]{../Bilder/Sattelpunkt}
 				\caption{\small Die Werte $\frac{\Alg_p(\sigma_q)}{\Opt(\sigma_q)}$ - kleine Werte sind blau, große sind rot (siehe Legende rechts)}
 				\label{fig:Sattelpunkt}
 			\end{figure}
@@ -579,7 +608,7 @@
 		Fassen wir die Werte in \Cref{fig:Sattelpunkt} als Höhenangaben auf, so ist dieser Punkt auch tatsächlich ein \glqq anschaulicher\grqq{} Sattel, wie wir an folgendem Plot sehen können:		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.3\linewidth]{../Bilder/Rplot05}
+			\includegraphics[width=0.45\linewidth]{../Bilder/Rplot05}
 			\caption{\small Der Sattelpunkt dieses Spiels}
 			\label{fig:Rplot05}
 		\end{figure} 
@@ -779,6 +808,7 @@
 		Laut Yaos Prinzip ist das nun eine untere Schranke für die Kompetitivität des besten Online-Algorithmus. Die Hoffnung einen Online-Algorithmus zu finden, der besser als 1,5-kompetitiv ist, müssen wir also aufgeben, und sollten an dem Spiel in dieser Form daher besser nicht teilnehmen.
 	\end{bsp}	
 
+	\newpage
 	\nocite{*}
 	\printbibliography		
 			
