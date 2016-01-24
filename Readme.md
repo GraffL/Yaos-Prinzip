@@ -1,3 +1,17 @@
+# &bdquo;Abstract&ldquo;
+
+Ein Online-Algorithmus ist ein Optimierungs-Algorithmus, der die Probleminstanz nur nach und nach bekommt und jeweils nur auf Basis der bereits erhaltenen Informationen seine Entscheidungen treffen muss (z.B. Bin-Packing, wobei der Algorithmus immer nur ein Element auf einmal bekommt und dieses sofort einem Bin zuweisen muss). 
+
+Ein Maß für die Leistungsfähigkeit eines solchen Online-Algorithmus ist der Vergleich mit einem optimalen Offline-Algorithmus (also einem Algorithmus dem die gesamte Probleminstanz von Anfang an bekannt ist). Kann das Verhältnis der durch beide Algorithmen verursachte Kosten (bzw. erzielten Gewinne) durch eine feste Zahl &alpha; beschränkt werden, so bezeichnet man den Online-Algorithmus als <em>&alpha;-kompetetiv</em>.
+
+Yaos Prinzip bietet nun eine Möglichkeit durch die Wahl einer Verteilung über den möglichen Anfragesequenzen eine untere Schranke (im Falle der Kostenoptimierung) für die erreichbare Kompetitivität von Online-Algorithmen für ein bestimmtes Problem zu finden. Darüberhinaus zeigt sich sogar, dass diese Schranke durch geeignete Wahl der Verteilung immer scharf gemacht werden kann (allerdings ist im Allgemeinen nicht klar wie diese Verteilung dazu gewählt werden muss).
+
+Der Darstellung in "Online Computation and Competitive Analysis" von Allan Borodin und Ran El-Yaniv folgend modellieren wir Optimierungsprobleme als Zwei-Personen-Nullsummenspiele um dann von Neumanns Minimax-Theorem zum Beweis von Yaos Prinzip verwenden zu können. 
+
+Es stellt sich allerdings heraus, dass dieser &bdquo;Umweg&ldquo; nicht zwingend notwendig ist, wenn man bereits ist auf die Aussage über die Schärfe der Schranke zu verzichten. Ein entsprechender alternativer Beweis wird in der Ausarbeitung bei Satz 4.2 angegeben. Insofern scheint es mir so, dass der Hauptzweck der spieltheoretischen Modellierung mehr darin liegt, die &bdquo;Reichweite&ldquo; von Yaos Prinzip weiter fassen zu können (siehe Fußnote 4 in der Ausarbeitung, S. 6).
+
+<hr />
+
 # Quellen:
 
 ## Bilder u.ä.
